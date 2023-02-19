@@ -1,0 +1,33 @@
+<div class="flex flex-col items-center justify-center h-screen w-screen bg-gray-200">
+
+  <div class="flex flex-col pointer-events-auto w-[21rem] rounded-lg bg-white p-4 text-[0.8125rem] leading-5 shadow-xl shadow-black/5 hover:bg-slate-50 ring-2 ring-indigo-600">
+    <div class="flex justify-between relative">
+
+      <div class="font-medium text-3xl text-slate-900">Counter</div>
+      <div class="flex flex-col justify-between items-center absolute right-0 text-4xl">
+        <div class="mb-5 text-right text-6xl"><%= @number %></div>
+        <div class=""><%= @actcon %></div>
+      </div>
+
+    </div>
+
+    <div class="mt-1 pr-6 text-slate-700">
+      Using <u>Phoenix LiveView</u> and our beloved <u>Tailwind CSS</u>
+    </div>
+
+    <div class="mt-6 font-medium text-slate-900">
+      <nav class="isolate inline-flex -space-x-px rounded-md shadow-lg" aria-label="Pagination">
+          <button phx-click="dec" class="relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20">
+            <span class="sr-only">Decrease</span>
+            <span class="h-5 w-5">➖</span>
+          </button>
+          <button phx-click="clear" class="relative z-10 inline-flex items-center border border-indigo-500 bg-indigo-50 px-4 py-2 text-sm font-medium text-indigo-600 focus:z-20">clear</button>
+          <button phx-click="inc"class="relative inline-flex items-center rounded-r-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20">
+            <span class="sr-only">Increase</span>
+            <span class="h-5 w-5">➕</span>
+          </button>
+        </nav>
+    </div>
+  </div>
+
+</div>
