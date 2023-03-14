@@ -9,21 +9,21 @@ defmodule CounterWeb.PageLive do
 
   def handle_event("inc", _params, socket) do
     {:noreply, socket
-      |> update(:number, &min(99,&1 + 1))
-      |> update(:actcon, &(&1="🔺")) # fn(x) -> x="🔺" end
+      |> update(:number, &min(99, &1 + 1))
+      |> update(:actcon, &(&1 = "🔺")) # fn(x) -> x="🔺" end
     }
   end
 
   def handle_event("dec", _params, socket) do
     {:noreply, socket
       |> update(:number, &max(0, &1 - 1))
-      |> update(:actcon, &(&1="🔻"))
+      |> update(:actcon, &(&1 = "🔻"))
     }
   end
 
   def handle_event("clear", _params, socket) do
     {:noreply, socket
-      |> assign(number: 0,actcon: "🧑🏾‍💻")
+      |> assign(number: 0, actcon: "🧑🏾‍💻")
     }
   end
 
