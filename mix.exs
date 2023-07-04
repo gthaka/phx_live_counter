@@ -43,7 +43,7 @@ defmodule Counter.MixProject do
       {:telemetry_poller, "~> 1.0"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:tailwind, "~> 0.1.5"},
+      {:tailwind, "~> 0.2.0"},
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false}
     ]
   end
